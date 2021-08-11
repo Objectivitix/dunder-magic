@@ -1,4 +1,4 @@
-from typing import Any, Callable, NoReturn, Optional
+from typing import Any, Callable, NoReturn
 
 
 class SquareFunction:
@@ -14,7 +14,7 @@ class SquareFunction:
         self.func = func
 
     @staticmethod
-    def _verify(pkargs: tuple) -> Optional[NoReturn]:
+    def _verify(pkargs: tuple) -> None:
         """
         Verify if a tuple of args and kwargs is in the correct format.
 
