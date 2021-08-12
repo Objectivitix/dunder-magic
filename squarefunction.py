@@ -11,6 +11,7 @@ class SquareMethod:
 
     To expand on this, class and static method equivalents can also be easily created.
     """
+
     def __init__(self, func: "SquareFunction", instance: Any) -> None:
         """Construct a SquareMethod instance bounded to obj."""
         self.__func__ = func
