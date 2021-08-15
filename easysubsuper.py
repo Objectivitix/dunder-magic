@@ -3,7 +3,7 @@ class EasySubSuper(type):
     Metaclass whose class instances have an easy way of comparing sub/superclasses.
 
     The rich comparison operators only consider sub/superclasses as strict MRO concepts;
-    any __issubclasscheck__ is ignored and, consequently, ABC behaviour might be unexpected.
+    any __subclasscheck__ is ignored and, consequently, ABC behaviour might be unexpected.
     """
 
     def __lt__(cls, other: type) -> bool:
