@@ -23,6 +23,8 @@ class EasySubSuper(type):
         return cls in other.__mro__
 
 
+# ----- DRIVER CODE -----
+
 class A(metaclass=EasySubSuper): pass
 class B(A): pass
 class C(A): pass
