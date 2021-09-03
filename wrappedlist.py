@@ -7,7 +7,7 @@ Key = Union[int, slice]
 
 
 class WrappedList(list):
-    """Class for lists who wrap back to the start when an index is out of range."""
+    """Class for lists who wrap back to the start when an index/slice value is out of range."""
 
     def __init__(self, *items, iterable: Optional[Iterable] = None) -> None:
         """Construct a WrappedList instance."""
